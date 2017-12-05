@@ -7,6 +7,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 public class Controller {
 
@@ -16,9 +17,10 @@ public class Controller {
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(Main.class.getResource("../vista/FreeSolo.fxml"));
 			AnchorPane page = (AnchorPane) loader.load();
+			
 			Stage sendStage = new Stage();
 			sendStage.setTitle("FreeSolo");
-
+			sendStage.initStyle(StageStyle.UNDECORATED);
 			Scene scene = new Scene(page);
 			sendStage.setScene(scene);
 

@@ -6,6 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 /**
  * @author Borja
@@ -20,6 +21,7 @@ public class Main extends Application {
 
         FXMLLoader loader=new FXMLLoader(getClass().getResource("../vista/Login.fxml"));
         AnchorPane pane=loader.load();
+        primaryStage.initStyle(StageStyle.UNDECORATED);
         Scene scene=new Scene(pane);
         primaryStage.setScene(scene);
         primaryStage.show();
