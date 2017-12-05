@@ -17,7 +17,7 @@
             </Label>
          </children>
       </Pane>
-      <Pane layoutY="97.0" onMouseClicked="#exit" prefHeight="203.0" prefWidth="500.0" style="-fx-background-color: #202020;">
+      <Pane layoutY="97.0" prefHeight="203.0" prefWidth="500.0" style="-fx-background-color: #202020;">
          <children>
             <Label layoutX="122.0" layoutY="33.0" prefHeight="45.0" prefWidth="256.0" text="PÁGINA NO ENCONTRADA" textFill="WHITE" wrapText="true">
                <font>
@@ -29,7 +29,7 @@
                   <Font size="19.0" />
                </font>
             </Label>
-            <JFXButton layoutX="146.0" layoutY="138.0" prefHeight="41.0" prefWidth="208.0" style="-fx-border-color: #fff; -fx-border-radius: 10px;" text="EXIT" textFill="WHITE" />
+            <JFXButton layoutX="146.0" layoutY="138.0" onMouseClicked="#exit" prefHeight="41.0" prefWidth="208.0" style="-fx-border-color: #fff; -fx-border-radius: 10px;" text="EXIT" textFill="WHITE" />
          </children>
       </Pane>
    </children>
