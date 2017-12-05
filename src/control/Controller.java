@@ -2,7 +2,6 @@ package control;
 
 import java.io.IOException;
 
-import application.Main;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -17,11 +16,11 @@ public class Controller {
 	private ImageView refugees;
 	
 	
-	public void showSendProfile() {
+	public void FreeSolo() {
         try {
             // Load the fxml file and create a new stage for the popup.
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(Main.class.getResource("view/Superheader.fxml"));
+            loader.setLocation(Main.class.getResource("../vista/FreeSolo.fxml"));
             AnchorPane page = (AnchorPane) loader.load();
             Stage sendStage = new Stage();
             sendStage.setTitle("Superheader");
@@ -54,6 +53,7 @@ public class Controller {
 	
 	@FXML
 	private void handleSend() {
-		System.exit(0);
+		FreeSolo();
+		//System.exit(0);
     }
 }
